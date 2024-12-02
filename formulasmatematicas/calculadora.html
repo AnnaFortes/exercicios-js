@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX JS</title>
+</head>
+<body>
+    <h1>Resultados de Operações Matemáticas</h1>
+
+    <script>
+        let num1 = Number(prompt('Digite um numero: '))
+        let num2 = Number(prompt('Digite outro número: '))
+
+        let soma = num1 + num2
+        let sub = num1 - num2
+        let mult = num1 * num2
+        let divi = num2 !== 0 ? num1 / num2 : 'Indefinido'
+
+        let resultado = ''
+        
+        resultado += `<p>Soma ${soma}</p>`
+        resultado += `<p>Subtração: ${sub}</p>`
+        resultado += `<p>Multiplicação: ${mult}</p>`
+        resultado += `<p>Divisão: ${divi}</p>`
+
+        document.body.innerHTML += resultado
+        
+        
+    </script>
+</body>
+</html>

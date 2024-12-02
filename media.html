@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <h1>Média Aritmética</h1>
+
+    <script>
+        let num1 = Number(prompt('Digite um número: '))
+        let num2 = Number(prompt('Digite outro numero: '))
+        let num3 = Number(prompt('Digite outro numero: '))
+
+        let media = (num1 + num2 + num3) / 3
+        let resultado = ''
+
+        resultado += `<p>A média entre os valores é ${media}</p>`
+        document.body.innerHTML += resultado
+    </script>
+</body>
+</html>
