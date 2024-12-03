@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulo</title>
+</head>
+<body>
+    <h1>Triângulo</h1>
+
+    <script>
+        /* Escreva um programa que calcule o perímetro e a área de um triângulo, utilizando as fórmulas P = a + b + c e A = (b * h) / 2, onde a, b e c são os lados do triângulo e h é a altura relativa ao lado b.
+ */
+        let a = Number(prompt('Digite um valor para um lado de um triângulo: '))
+        let b = Number(prompt('Digite um valor para um lado de um triângulo: '))
+        let c = Number(prompt('Digite outro valor para um lado de um triângulo'))
+        let h = Number(prompt('Digite um valor para a altura de um triângulo'))
+        let perimetro = a + b + c
+        let area = (b * h) / 2
+        document.body.innerHTML = `<p>O perímetro de um triângulo é : ${perimetro}</p> <p>A área de um triângulo é: ${area}</p>`
+    </script>
+</body>
+</html>

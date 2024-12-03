@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade Média de um Objeto</title>
+</head>
+<body>
+    <h1>Velocidade Média de um Objeto</h1>
+
+    <script>
+        /* Escreva um programa que calcule a velocidade média de um objeto, utilizando a fórmula v = Δs/Δt, onde v é a velocidade média, Δs é a variação de espaço e Δt é a variação de tempo
+        deslocamento(s) = sf(posição final) - si(posição inicial)
+        tempo(t) = tf(tempo final) - ti(tempo inicial)
+        v = deslocamento / tempo
+         */
+        let si = Number(prompt('Digite o deslocamento inicial: '))
+        let sf = Number(prompt('Digite o deslocamento final:'))
+        let ti = Number(prompt('Digite o tempo inicial:'))
+        let tf = Number(prompt('Digite o tempo final:'))
+        let deslocamento = sf - si
+        let tempo = tf - ti
+        let velocidadeMedia = deslocamento / tempo
+        velocidadeMedia = velocidadeMedia.toFixed(2)
+        document.body.innerHTML = `A velocidade média é: ${velocidadeMedia}`
+    </script>
+</body>
+</html>

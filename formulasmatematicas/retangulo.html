@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perímetro e a Área de um Retângulo</title>
+</head>
+<body>
+    <h1>Perímetro e a Área de um Retângulo</h1>
+
+    <script>
+        /* 
+        Fórmula: p = 2(l + c) e a = lc
+        l: largura
+        c: comprimento
+        */
+       let largura = Number(prompt('Digite um valor para a largura: '))
+       let comprimento = Number(prompt('Digite um valor para o comprimento: '))
+       let p = 2 * (largura + comprimento)
+       let a = largura * comprimento
+
+       document.body.innerHTML = `<p>O perímetro de um retângulo é: ${p}</p>
+       <p>A área de um retângulo é: ${a}</p>`
+    </script>
+</body>
+</html>

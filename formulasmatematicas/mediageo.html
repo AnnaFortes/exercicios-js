@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Geométrica</title>
+</head>
+<body>
+    <h1>Média Geométrica</h1>
+
+    <script>
+        let num1 = parseFloat(prompt('Digite um numero'))
+        let num2 = Number(prompt('Digite outro numero'))
+
+        //calcula a media geometrica
+        let produto = num1 * num2
+        let media = Math.pow(produto, 1/2) 
+        let mediaA = media.toFixed(2)
+        let resultado = ''
+        resultado += `A média geométrica entre os valores é ${mediaA}`
+        document.body.innerHTML = resultado
+    </script>
+</body>
+</html>

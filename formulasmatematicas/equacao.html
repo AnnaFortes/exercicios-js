@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação do 2° Grau</title>
+</head>
+<body>
+    <h1>Equação do 2° Grau</h1>
+
+    <script>
+        /* formula bhaskara: x = (-b +- V(b2 - 4ac))/ (2a)
+        ax2 + bx + c = 0
+        */
+       //definindo valores de a b e c 
+       let a = Number('1')
+       let b = Number('5')
+       let c = Number('6')
+       //calcula o discriminante
+       let discriminante = Math.pow(b, 2) - 4 * a * c
+       //verifica o valor discriminante
+       if (discriminante > 0) {
+        //calcula as raizes reais
+            let raiz1 = (-b + Math.sqrt(discriminante)) / (2 * a)
+            let raiz2 = (- b - Math.sqrt(discriminante)) / (2 * a)
+            document.body.innerHTML = `As raízes reais são: ${raiz1} e ${raiz2}`
+        } else if (discriminante === 0) {
+            //calcula a raiz real unica
+            let raiz = -b / (2 * a)
+            document.body.innerHTML = `A raiz real é: ${raiz}`
+        } else {
+            document.body.innerHTML = 'A equação não possui raízes reais'
+        }
+            
+    </script>
+</body>
+</html>

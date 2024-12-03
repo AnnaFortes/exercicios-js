@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Cinética</title>
+</head>
+<body>
+    <h1>Energia Cinética</h1>
+    <script>
+        /* Escreva um programa que calcule a energia cinética de um objeto em movimento, utilizando a fórmula E = (mv²) / 2, onde E é a energia cinética, m é a massa do objeto e v é a velocidade.*/
+        let massa = Number(prompt('Digite o valor da massa do objeto: '))
+        let velocidade = Number(prompt('Digite a velocidade do objeto: '))
+        let energia = (massa * Math.pow(velocidade, 2)) / 2
+        document.body.innerHTML = `A energia cinética do objeto em movimento é: ${energia} Joules`
+    </script>
+</body>
+</html>

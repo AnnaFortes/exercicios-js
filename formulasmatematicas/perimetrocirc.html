@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo</title>
+</head>
+<body>
+    <h1>Perímetro de um Círculo</h1>
+
+    <script>
+        let raio = Number(prompt('Digite o valor do raio de perímetro: '))
+        let circulo = 2 * Math.PI * raio
+        circulo = circulo.toFixed(2)
+        document.body.innerHTML = `O resultado do perímetro é ${circulo}`
+    </script>
+</body>
+</html>
