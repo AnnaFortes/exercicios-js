@@ -11,6 +11,16 @@
     <script>
         /* Escreva um programa que leia a posição x e y de dois pontos no plano cartesiano, e calcule a distância entre ambos.
         FAREI AMANHÃ */
-    </script>
+        let x1 = Number(prompt('Digite o primeiro valor para as cordenadas(x1): '))
+        let x2 = Number(prompt('Digite o segundo valor para as cordenadas(x2): '))
+        let y1 = Number(prompt('Digite o terceiro valor para as cordenadas(y1): '))
+        let y2 = Number(prompt('Digite o quarto valor para as cordenadas(y2): '))
+        let subX  = x2 - x1
+        let subY = y2 - y1
+        let calculo = Math.pow(subX, 2) + Math.pow(subY, 2)
+        let resultado = Math.sqrt(calculo).toFixed(2)
+        document.body.innerHTML = `A distância dos pontos no plano cartesiano é: ${resultado}`
+ //9, 8, 7, 6
+</script>
 </body>
 </html>

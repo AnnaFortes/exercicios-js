@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        /* 
+        Crie um programa que solicite ao usuário o valor do raio de uma esfera e calcule e exiba o seu volume.
+        */
+       let raio = Number(prompt('Digite o valor do raio de uma esfera para saber seu volume: '))
+       let volume = Math.pow(raio, 3) * Math.PI * 4/3
+       //ou poderia ser resultado = volume * 4/3
+       document.body.innerHTML = `O volume do raio da esfera é de ${volume.toFixed(2)}`
+
+    </script>
+</body>
+</html>
