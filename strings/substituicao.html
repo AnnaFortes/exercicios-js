@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substituição</title>
+</head>
+<body>
+    
+    <script>
+        let frase = prompt('Digite uma frase: ')
+        let novaFrase = frase.replace(/a/g, 'e')
+        /*let novaFrase = '' //vazio para armazenar a substituição
+         for (let i = 0; i < frase.length; i++) { 
+            if (frase[i] === 'a') { //se letra na posição[i] for igual a 
+                novaFrase += 'e' //na novaFrase sera u
+            } else {
+                novaFrase += frase[i] //ou novaFrase sera a frase
+            }
+        } */
+        document.body.innerHTML = `Nova frase: ${novaFrase}`
+        
+    </script>
+</body>
+</html>

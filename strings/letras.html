@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras</title>
+</head>
+<body>
+    <h1>Letras</h1>
+
+    <script>
+       
+        let palavra = prompt('Digite uma palavra: ')
+        //for para percorrer cada o comprimento da palavra
+        for (let pos = 0; pos < palavra.length; pos++ ) { 
+            //mostra cada letra e o br faz as letras pularem de linha
+            document.body.innerHTML += palavra[pos] + '<br>'
+        }
+        
+        
+    </script>
+</body>
+</html>

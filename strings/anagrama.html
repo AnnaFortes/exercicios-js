@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagrama</title>
+</head>
+<body>
+    
+    <script>
+        let palavra1 = prompt('Digite uma palavra: ')
+        let palavra2 = prompt('Digite outra palavra: ')
+        let anagrama1 = palavra1.toLowerCase().trim().split('').sort().join('')
+        let anagrama2 = palavra2.toLowerCase().trim().split('').sort().join('')
+            if (anagrama1 == anagrama2) {
+                document.body.innerHTML = `As palavras ${palavra1} e ${palavra2} são um anagrama.`
+            } else {
+                document.body.innerHTML = `As palavras ${palavra1} e ${palavra2} não são um anagrama.`
+            }
+    </script>
+</body>
+</html>

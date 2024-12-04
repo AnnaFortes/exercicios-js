@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindromo</title>
+</head>
+<body>
+    
+    <script>
+        /* 
+        Faça um programa que leia uma palavra e verifique se a mesma é palíndromo (se pode ser lida da mesma forma de trás para frente).
+        REVERSE
+       */
+        let palavra = prompt('Digite uma palavra para saber se a mesma é palíndromo(mesma forma de trás para frente): ')
+        //palavra para minusculo, split converte a palavra num array de carac, reverse inverte a ordem do array e join, junta tudo d volta numa string
+        let novaPalavra = palavra.toLowerCase().split('').reverse().join('')
+        if (palavra != novaPalavra) {
+            document.body.innerHTML = `A palavra ${novaPalavra} não é um palíndromo`
+        } else {
+        document.body.innerHTML = `A palavra digitada ${novaPalavra} é um palíndromo`
+    }
+    </script>
+</body>
+</html>
