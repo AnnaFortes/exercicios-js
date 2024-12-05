@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisivel por 5</title>
+</head>
+<body>
+    
+    <script>
+        /* Faça um programa que leia três números, e informe se a soma deles é divisível por 5 ou não. */
+        let num1 = Number(prompt('Digite um numero: '))
+        let num2 = Number(prompt('Digite outro número: '))
+        let num3 = Number(prompt('Digite outro número: '))
+        let soma = num1 + num2 + num3
+        let resultado = soma % 5 === 0 ? 'Divisível por 5' : 'Não é divisível'
+        document.body.innerHTML = `O resultado da soma entre ${num1} + ${num2} + ${num3} é ${soma} = ${resultado}`
+
+    </script>
+</body>
+</html>
