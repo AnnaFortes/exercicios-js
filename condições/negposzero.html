@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negativo, Positivo ou Zero</title>
+</head>
+<body>
+
+    <script>
+        let numero = Number(prompt('Digite um número: '))
+        if (numero > 0) {
+            document.body.innerHTML = `O número ${numero} é positivo`
+        } else if (numero < 0) {
+            document.body.innerHTML = `O número ${numero} é negativo`
+        } else {
+            document.body.innerHTML = 'O número é igual a zero'
+        }
+    </script>
+</body>
+</html>

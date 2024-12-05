@@ -10,6 +10,18 @@
         /* 
         Faça um programa que receba uma frase e exiba a quantidade de espaços em branco presentes na mesma.
         */
+       let frase = prompt("Digite uma frase para saber a quantidade de espaços em branco: ")
+       let espaco = 0
+       let i = 0
+       do {
+        if (frase[i] === ' ') {
+            espaco++
+        }
+        i++
+       } while (i < frase.length)
+
+       document.body.innerHTML = `A quantidade espaços na frase é de ${espaco}`
+
     </script>
 </body>
 </html>

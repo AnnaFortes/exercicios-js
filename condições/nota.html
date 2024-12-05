@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    
+    <script>
+        /* Faça um programa que leia as notas de duas provas e informe se o aluno foi aprovado (nota maior ou igual a 6) ou reprovado (nota menor que 6) em cada uma das provas.  */
+        let nota1 = Number(prompt('Digite a primeira nota: '))
+        let nota2 = Number(prompt('Digite a segunda nota: '))
+        
+        let prova1 = nota1 >= 6 ? 'Aprovado' : 'Reprovado'
+        let prova2 = nota2 >= 6 ? 'Aprovado' : 'Reprovado'
+        document.body.innerHTML = `Primeira prova: ${prova1}<br> Segunda prova: ${prova2}`            
+    </script>
+</body>
+</html>

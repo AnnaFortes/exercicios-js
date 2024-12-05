@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* Escreva um programa que receba um nome completo e exiba o sobrenome (último nome) primeiro. */
+        let nome = prompt('Digite seu nome completo: ').toLowerCase()
+        let nomes = nome.split(' ')// divide o nome em partes
+        let sobrenome = nomes.pop() //remove o sobrenome do array
+        nomes.unshift(sobrenome) //adiciona o sobrenome ao inicio do array
+        nomeInvertido = nomes.join(' ') // junta nomes
+        /* let nomeInvertido = sobrenome + ' ' + nomes.join(' ') */
+        document.body.innerHTML = `O nome invertido é: ${nomeInvertido}`
+    </script>
+</body>
+</html>
